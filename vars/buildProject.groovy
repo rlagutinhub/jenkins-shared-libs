@@ -1,7 +1,7 @@
 #!groovy
 
 def call(Map config){
-    node {
+    // node {
         echo "This is project ${config.name}"
         // Get some code from a GitHub repository
         git 'https://github.com/jglick/simple-maven-project-with-tests.git'
@@ -12,5 +12,5 @@ def call(Map config){
         // Grouping steps
         // sh '...'
         // archiveArtifacts artifacts: '1', followSymlinks: false
-    }
+    // }
 }
